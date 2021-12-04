@@ -25,9 +25,8 @@ jobs:
 
       - name: Run Hugo 🚀
         run : |
-          git clone https://github.com/spf13/hyde.git themes/hyde
-          git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
-          hugo serve -D -b ${{ steps.tunnel.outputs.public-url }} --appendPort=false --liveReloadPort=443 --navigateToChanged -t hyde --port 1313 &
+          git clone https://github.com/MeiK2333/github-style.git themes/github-style
+          hugo serve -D -b ${{ steps.tunnel.outputs.public-url }} --appendPort=false --liveReloadPort=443 --navigateToChanged -t github-style --port 1313 &
 
       - run: echo "Navigate to ${{ steps.tunnel.outputs.public-url }}"
       - run: |

@@ -1,62 +1,36 @@
-baseurl = "/"
+baseURL = "/"
 languageCode = "en-us"
-theme = "hello-friend"
-paginate = 5
+title = "Aryaman's blog"
+theme = "github-style"
+#googleAnalytics = "UA-123456-789"
+#pygmentsCodeFences = true
+#pygmentsUseClasses = true
 
 [params]
-  # dir name of your blog content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+  author = "Aryaman"
+  description = "In solitude, where we are least alone."
+  github = "MeiK2333"
+  facebook = "MeiK2333"
+  twitter = "MeiK2333"
+  linkedin = "MeiK2333"
+  instagram = "MeiK2333"
+  tumblr = "MeiK2333"
+  email = "meik2333@gmail.com"
+  url = "https://meik2333.com"
+  keywords = "blog, google analytics"
+  rss = true
+  lastmod = true
+  userStatusEmoji = "😀"
+  #favicon = "/images/github.png"
+  location = "China"
 
-  # "light" or "dark"
-  defaultTheme = "dark"
+  [[params.links]]
+    title = "Link"
+    href = "https://github.com/meik2333"
+  [[params.links]]
+    title = "Link2"
+    href = "https://meik2333.com"
+    icon = "https://meik2333.com/images/avatar.png"
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
-
-  # Show reading time in minutes for posts
-  showReadingTime = false
-
-  # Show table of contents at the top of your posts (defaults to false)
-  # Alternatively, add this param to post front matter for specific posts
-  # toc = true
-
-  # Show full page content in RSS feed items
-  #(default is Description or Summary metadata in the front matter)
-  # rssFullText = true
-
-[languages]
-  [languages.en]
-    title = "Hello Friend"
-    subtitle = "A simple theme for Hugo"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    writtenBy = "Written by"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    minuteReadingTime = "min read"
-    dateFormatSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
-    # leave empty to disable, enter display text to enable
-    # lastModDisplay = ""
-
-    [languages.en.params.logo]
-      logoText = "hello friend"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]

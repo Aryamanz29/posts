@@ -18,14 +18,14 @@ jobs:
 
       - name: Remove content 🧹
         run : |
-          mkdir -p content/posts
-          git clone https://github.com/spf13/hyde.git themes/hyde
-          file="content/posts/${{ github.event.issue.title }}.md"
+          mkdir -p content/post
+          git clone https://github.com/MeiK2333/github-style.git themes/github-style
+          file="content/post/${{ github.event.issue.title }}.md"
           file=$(echo $file | tr -d ' ')
           echo "Post Name : $file"
           echo "Deleting $file 🧹"
           rm -rf $file
-          hugo -D -b https://aryamanz29.github.io/posts/ -t hyde
+          hugo -D -b https://aryamanz29.github.io/posts/ -t github-style
 
       - name: Publish content 🚀
         uses: stefanzweifel/git-auto-commit-action@v4
