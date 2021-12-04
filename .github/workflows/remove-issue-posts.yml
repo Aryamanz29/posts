@@ -20,18 +20,18 @@ jobs:
         run : |
           mkdir -p content/posts
           git clone https://github.com/spf13/hyde.git themes/hyde
-          file="content/posts/${{ github.event.issue.number }}.md"
-
-          touch $file
+          file="content/posts/${{ github.event.issue.title }}.md"
+          file=$(echo $file | tr -d ' ')
+          echo "Post Name : $file"
           echo "Deleting $file 🧹"
           rm -rf $file
           hugo -D -b https://aryamanz29.github.io/posts/ -t hyde
 
-      - name: Publish content
+      - name: Publish content 🚀
         uses: stefanzweifel/git-auto-commit-action@v4
         id: auto-commit-action
         with:
-          commit_message: 'Removed Post: ${{ github.event.issue.title }}'
+          commit_message: 'Removed post: ${{ github.event.issue.title }}'
           commit_options: '--allow-empty'
           repository: .
           status_options: '--untracked-files=no'
@@ -41,7 +41,7 @@ jobs:
           skip_fetch: true
           disable_globbing: true
 
-      - name: Update Gh-pages
+      - name: Update Gh-pages ✅
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

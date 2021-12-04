@@ -1,9 +1,8 @@
-name: gh-on-issue 🚀
+name: create-issue-posts 🚀
 
 on:
   issues:
-    types:
-      - opened
+    types: [opened, edited, reopened]
 
 jobs:
   create-post:
@@ -20,12 +19,13 @@ jobs:
         run : |
           mkdir -p content/posts
           git clone https://github.com/spf13/hyde.git themes/hyde
-          file="content/posts/${{ github.event.issue.number }}.md"
-
+          file="content/posts/${{ github.event.issue.title }}.md"
+          file=$(echo $file | tr -d ' ')
+          echo "Post Name : $file"
           touch $file
           echo "---" > $file
           echo "title: \"${{ github.event.issue.title }}\"" >> $file
-          echo "date: 2021-11-14T22:40:38Z" >> $file
+          echo "date: \"${{ github.event.issue.created_at }}\"" >> $file
           echo "draft: false" >> $file
           echo "---" >> $file
           echo "" >> $file
@@ -37,7 +37,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         id: auto-commit-action
         with:
-          commit_message: 'New content: ${{ github.event.issue.title }}'
+          commit_message: 'New Post: ${{ github.event.issue.title }}'
           commit_options: '--allow-empty'
           repository: .
           status_options: '--untracked-files=no'
