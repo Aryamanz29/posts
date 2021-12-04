@@ -1,12 +1,12 @@
-name: gh-on-issue 🚀
+name: remove-issue-posts 🧹
 
 on:
   issues:
     types:
-      - opened
+      - closed
 
 jobs:
-  create-post:
+  remove-post:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Hugo 🛠
@@ -16,28 +16,22 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      - name: Create content 👨‍💻
+      - name: Remove content 🧹
         run : |
           mkdir -p content/posts
           git clone https://github.com/spf13/hyde.git themes/hyde
           file="content/posts/${{ github.event.issue.number }}.md"
 
           touch $file
-          echo "---" > $file
-          echo "title: \"${{ github.event.issue.title }}\"" >> $file
-          echo "date: 2021-11-14T22:40:38Z" >> $file
-          echo "draft: false" >> $file
-          echo "---" >> $file
-          echo "" >> $file
-          echo "${{ github.event.issue.body }}" >> $file
-
+          echo "Deleting $file 🧹"
+          rm -rf $file
           hugo -D -b https://aryamanz29.github.io/posts/ -t hyde
 
-      - name: Publish content 🚀
+      - name: Publish content
         uses: stefanzweifel/git-auto-commit-action@v4
         id: auto-commit-action
         with:
-          commit_message: 'New content: ${{ github.event.issue.title }}'
+          commit_message: 'Removed Post: ${{ github.event.issue.title }}'
           commit_options: '--allow-empty'
           repository: .
           status_options: '--untracked-files=no'
@@ -47,7 +41,7 @@ jobs:
           skip_fetch: true
           disable_globbing: true
 
-      - name: Update Gh-pages ✅
+      - name: Update Gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
