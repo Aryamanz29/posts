@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://aryamanz29.github.io/posts"
 languageCode = "en-us"
 title = "Aryaman's blog"
 theme = "github-style"
@@ -18,19 +18,11 @@ theme = "github-style"
   email = "aryamanz29@gmail.com"
   url = "https://aryamanz29.github.io/"
   #keywords = "blog, google analytics"
-  rss = true
+  #rss = true
   lastmod = true
   userStatusEmoji = "🌠"
-  #favicon = "/images/github.png"
+  favicon = "/images/github.png"
   location = "India"
-
-  [[params.links]]
-    title = "Link"
-    href = "https://github.com/Aryamanz29"
-  [[params.links]]
-    title = "Link2"
-    href = "https://github.com/Aryamanz29"
-    icon = "https://avatars.githubusercontent.com/u/56113566?v=4"
-
+  
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]

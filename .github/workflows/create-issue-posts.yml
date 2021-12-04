@@ -8,17 +8,10 @@ jobs:
   create-post:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Hugo 🛠
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.85.0'
-
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
 
       - name: Create content 👨‍💻
         run : |
-          mkdir -p content/post
-          git clone https://github.com/MeiK2333/github-style.git themes/github-style
           file="content/post/${{ github.event.issue.title }}.md"
           file=$(echo $file | tr -d ' ')
           echo "Post Name : $file"
@@ -30,8 +23,6 @@ jobs:
           echo "---" >> $file
           echo "" >> $file
           echo "${{ github.event.issue.body }}" >> $file
-
-          hugo -D -b https://aryamanz29.github.io/posts/ -t github-style
 
       - name: Publish content 🚀
         uses: stefanzweifel/git-auto-commit-action@v4
@@ -46,10 +37,28 @@ jobs:
           skip_dirty_check: true
           skip_fetch: true
           disable_globbing: true
+          
+      # checkout to the commit that has been pushed
+      - uses: actions/checkout@v2.3.4
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      
+      # install Hugo
+      - name: Setup Hugo 🛠
+        uses: peaceiris/actions-hugo@v2.4.13
+        with:
+          hugo-version: 'latest'
+          extended: true
 
-      - name: Update Gh-pages ✅
-        uses: peaceiris/actions-gh-pages@v3
+      # build website
+      - name: Build 👨‍💻
+        run: hugo --minify
+
+      # push the generated content into the `main` (former `master`) branch.
+      - name: Deploy 🚀
+        uses: peaceiris/actions-gh-pages@v3.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
+          publish_branch: gh-pages # if your main branch is `master` use that here.
           publish_dir: ./public
