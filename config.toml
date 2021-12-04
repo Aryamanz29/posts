@@ -8,29 +8,29 @@ theme = "github-style"
 
 [params]
   author = "Aryaman"
-  description = "In solitude, where we are least alone."
-  github = "MeiK2333"
-  facebook = "MeiK2333"
-  twitter = "MeiK2333"
-  linkedin = "MeiK2333"
-  instagram = "MeiK2333"
-  tumblr = "MeiK2333"
-  email = "meik2333@gmail.com"
-  url = "https://meik2333.com"
-  keywords = "blog, google analytics"
+  description = "Converting My Imagination Into Reality"
+  github = "Aryamanz29"
+  #facebook = ""
+  twitter = "AryamanZ29"
+  linkedin = "aryamanz29"
+  instagram = "aryaman_z29"
+  #tumblr = ""
+  email = "aryamanz29@gmail.com"
+  url = "https://aryamanz29.github.io/"
+  #keywords = "blog, google analytics"
   rss = true
   lastmod = true
-  userStatusEmoji = "😀"
+  userStatusEmoji = "🌠"
   #favicon = "/images/github.png"
-  location = "China"
+  location = "India"
 
   [[params.links]]
     title = "Link"
-    href = "https://github.com/meik2333"
+    href = "https://github.com/Aryamanz29"
   [[params.links]]
     title = "Link2"
-    href = "https://meik2333.com"
-    icon = "https://meik2333.com/images/avatar.png"
+    href = "https://github.com/Aryamanz29"
+    icon = "https://avatars.githubusercontent.com/u/56113566?v=4"
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
