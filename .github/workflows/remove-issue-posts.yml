@@ -13,9 +13,11 @@ jobs:
 
       - name: Remove content 🧹
         run : |
-          file="content/post/${{ github.event.issue.title }}.md"
+          file="${{ github.event.issue.title }}.md"
           file=$(echo $file | tr -d ' ')
           echo "Post Name : $file"
+          cd content/post/
+          ls -la
           echo "Deleting $file 🧹"
           rm -rf $file
 
