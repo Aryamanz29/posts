@@ -2,10 +2,8 @@
 title: "Git and Github fundamentals"
 date: "2021-12-05T10:45:05Z"
 draft: false
-summary: # Practice Git and G...
+summary: Imagine you are work...
 ---
-
-# Practice Git and Github fundamentals
 
 Imagine you are working on a project and you add some code to it that breaks the project and you want to roll back to that point that before the change was made.
 Git facilitates that by acting as a Version Control System.
