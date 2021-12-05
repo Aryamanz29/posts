@@ -6,7 +6,7 @@ pin: false  <!--Do you want to pin this blog post? (true/false)-->
 summary: Learn about markdown <!--Blog post visible summary here-->
 --- 
 <!--Blog content here-->
-# Markdown Language
+# Learn About Markdown Language  🚀
 ### Markdown is a lightweight markup language. It is used to create formatted text using simple text editor. 
 #### Github supports Markdown and thats why we are going to create this documentation in .md file.
 
