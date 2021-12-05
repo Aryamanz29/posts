@@ -3,7 +3,7 @@ title: "Deploying to netlify 🚀"
 date: "2021-12-05T18:21:32Z"
 draft: false
 pin: false  <!--Do you want to pin this blog post? (true/false)-->
-summary: MY BLOG SUMMARY <!--Blog post visible summary here-->
+summary: Learn how to deploy sites to netlify <!--Blog post visible summary here-->
 --- 
 <!--Blog content here-->
 # Deploying Site on Netlify
