@@ -24,7 +24,6 @@ jobs:
           echo "Deleting existing post with name issue number"
           delfile="${{github.event.issue.number}}-"
           rm -rf $(find . | grep $delfile)
-          summary="${{ github.event.issue.body }}"
           file=$(echo $file | tr -d ' ')
           echo "Post Name : $file"
           touch $file
@@ -32,9 +31,6 @@ jobs:
           echo "title: \"${{ github.event.issue.title }}\"" >> $file
           echo "date: \"${{ github.event.issue.created_at }}\"" >> $file
           echo "draft: false" >> $file
-          echo "summary: ${summary::20}..." >> $file
-          echo "---" >> $file
-          echo "" >> $file
           echo "${{ github.event.issue.body }}" >> $file
 
           hugo -D -b https://aryamanz29.github.io/posts/ -t github-style
