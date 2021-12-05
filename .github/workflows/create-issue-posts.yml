@@ -21,6 +21,9 @@ jobs:
           mkdir -p content/post
           git clone https://github.com/MeiK2333/github-style.git themes/github-style
           file="content/post/${{ github.event.issue.number }}-${{ github.event.issue.title }}.md"
+          echo "Deleting existing post with name issue number"
+          delfile="${{github.event.issue.number}}-"
+          rm -rf $(find . | grep $delfile)
           summary="${{ github.event.issue.body }}"
           file=$(echo $file | tr -d ' ')
           echo "Post Name : $file"
