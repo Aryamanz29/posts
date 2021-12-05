@@ -8,12 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Dec 2021 10:45:05 +0000</lastBuildDate><atom:link href="https://aryamanz29.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>last check edited checking123</title>
-      <link>https://aryamanz29.github.io/posts/post/8-lastcheckeditedchecking123/</link>
+      <title>Git and Github fundamentals</title>
+      <link>https://aryamanz29.github.io/posts/post/8-gitandgithubfundamentals/</link>
       <pubDate>Sun, 05 Dec 2021 10:45:05 +0000</pubDate>
       
-      <guid>https://aryamanz29.github.io/posts/post/8-lastcheckeditedchecking123/</guid>
-      <description>last check dsdka&amp;rsquo;dlk&amp;hellip;</description>
+      <guid>https://aryamanz29.github.io/posts/post/8-gitandgithubfundamentals/</guid>
+      <description>Practice Git and Github fundamentals Imagine you are working on a project and you add some code to it that breaks the project and you want to roll back to that point that before the change was made. Git facilitates that by acting as a Version Control System.
+Issues faced by early developers before git  Developers had to submit their codes to the without having copies of their own Any changes made to the source code were unknown to the other developers There was no communication between any of the developers  How git changed the scenario  Every developer has an entire copy of the code on their Any changes made to the source code can be tracked by others There is regular communication between the developers  What is git?</description>
     </item>
     
     <item>
