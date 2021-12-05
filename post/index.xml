@@ -13,8 +13,7 @@
       <pubDate>Sun, 05 Dec 2021 10:45:05 +0000</pubDate>
       
       <guid>https://aryamanz29.github.io/posts/post/8-gitandgithubfundamentals/</guid>
-      <description>Practice Git and Github fundamentals Imagine you are working on a project and you add some code to it that breaks the project and you want to roll back to that point that before the change was made. Git facilitates that by acting as a Version Control System.
-Issues faced by early developers before git  Developers had to submit their codes to the without having copies of their own Any changes made to the source code were unknown to the other developers There was no communication between any of the developers  How git changed the scenario  Every developer has an entire copy of the code on their Any changes made to the source code can be tracked by others There is regular communication between the developers  What is git?</description>
+      <description>Imagine you are work&amp;hellip;</description>
     </item>
     
     <item>
