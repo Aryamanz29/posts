@@ -20,7 +20,7 @@ jobs:
         run : |
           mkdir -p content/post
           git clone https://github.com/MeiK2333/github-style.git themes/github-style
-          file="content/post/${{ github.event.issue.title }}.md"
+          file="content/post/${{ github.event.issue.number }}-${{ github.event.issue.title }}.md"
           summary="${{ github.event.issue.body }}"
           file=$(echo $file | tr -d ' ')
           echo "Post Name : $file"

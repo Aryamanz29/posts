@@ -13,13 +13,12 @@ jobs:
 
       - name: Remove content 🧹
         run : |
-          file="${{ github.event.issue.title }}.md"
-          file=$(echo $file | tr -d ' ')
-          echo "Post Name : $file"
+          file="${{github.event.issue.number}}-"
+          echo "Post Issue Number : $file"
           cd content/post/
           ls -la
           echo "Deleting $file 🧹"
-          rm -rf $file
+          rm -rf $(find . | grep file)
 
       - name: Publish content 🚀
         uses: stefanzweifel/git-auto-commit-action@v4
