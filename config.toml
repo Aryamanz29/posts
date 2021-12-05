@@ -21,7 +21,7 @@ theme = "github-style"
   #rss = true
   lastmod = true
   userStatusEmoji = "🌠"
-  favicon = "/images/github.png"
+  favicon = "/posts/images/github.png"
   location = "India"
   
 [frontmatter]
