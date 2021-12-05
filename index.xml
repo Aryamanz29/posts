@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aryaman's blog</title><link>https://aryamanz29.github.io/posts/</link><description>Recent content on Aryaman's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 05 Dec 2021 10:31:30 +0000</lastBuildDate><atom:link href="https://aryamanz29.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>final checking</title><link>https://aryamanz29.github.io/posts/post/7-finalchecking/</link><pubDate>Sun, 05 Dec 2021 10:31:30 +0000</pubDate><guid>https://aryamanz29.github.io/posts/post/7-finalchecking/</guid><description>final checkingfinal &amp;hellip;</description></item><item><title>my custom post</title><link>https://aryamanz29.github.io/posts/post/mycustompost/</link><pubDate>Sat, 04 Dec 2021 18:46:38 +0000</pubDate><guid>https://aryamanz29.github.io/posts/post/mycustompost/</guid><description>Hii guys this is my custom post</description></item><item><title>yes sirrrrrrr new post changed yay</title><link>https://aryamanz29.github.io/posts/post/yessirrrrrrrnewpostchangedyay/</link><pubDate>Sat, 04 Dec 2021 17:51:35 +0000</pubDate><guid>https://aryamanz29.github.io/posts/post/yessirrrrrrrnewpostchangedyay/</guid><description>yes sirrrrrrr new po&amp;hellip;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aryaman&#39;s blog</title>
+    <link>https://aryamanz29.github.io/posts/</link>
+    <description>Recent content on Aryaman&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Dec 2021 10:45:05 +0000</lastBuildDate><atom:link href="https://aryamanz29.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>last check</title>
+      <link>https://aryamanz29.github.io/posts/post/8-lastcheck/</link>
+      <pubDate>Sun, 05 Dec 2021 10:45:05 +0000</pubDate>
+      
+      <guid>https://aryamanz29.github.io/posts/post/8-lastcheck/</guid>
+      <description>last check&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>final checking</title>
+      <link>https://aryamanz29.github.io/posts/post/7-finalchecking/</link>
+      <pubDate>Sun, 05 Dec 2021 10:31:30 +0000</pubDate>
+      
+      <guid>https://aryamanz29.github.io/posts/post/7-finalchecking/</guid>
+      <description>final checkingfinal &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>my custom post</title>
+      <link>https://aryamanz29.github.io/posts/post/mycustompost/</link>
+      <pubDate>Sat, 04 Dec 2021 18:46:38 +0000</pubDate>
+      
+      <guid>https://aryamanz29.github.io/posts/post/mycustompost/</guid>
+      <description>Hii guys this is my custom post</description>
+    </item>
+    
+    <item>
+      <title>yes sirrrrrrr new post changed yay</title>
+      <link>https://aryamanz29.github.io/posts/post/yessirrrrrrrnewpostchangedyay/</link>
+      <pubDate>Sat, 04 Dec 2021 17:51:35 +0000</pubDate>
+      
+      <guid>https://aryamanz29.github.io/posts/post/yessirrrrrrrnewpostchangedyay/</guid>
+      <description>yes sirrrrrrr new po&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>
