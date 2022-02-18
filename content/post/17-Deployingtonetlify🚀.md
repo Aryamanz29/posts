@@ -8,7 +8,7 @@ summary: Learn how to deploy sites to netlify <!--Blog post visible summary here
 <!--Blog content here-->
 # Deploying Site on Netlify
 
-![Netlify Page](https://miro.medium.com/max/560/1*WMA_NYFfvZIpx_uvQxQQEA.jpeg)
+<img src=https://user-images.githubusercontent.com/56113566/154732097-4358140f-fdd4-467e-9580-5421de6c6206.jpeg height=400 width=600/>
 
  is an all-in-one platform for automating modern web projects.It has **continuous integration**, and deployment pipeline with a **single workflow**.
 
