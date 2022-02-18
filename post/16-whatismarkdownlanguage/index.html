@@ -121,8 +121,6 @@
   </header>
 </div>
   
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
 <div>
   <main>
     <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
@@ -150,9 +148,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Sun, 05 Dec 2021 19:55:05 &#43;0000"
+                  Modified <relative-time datetime="Fri, 18 Feb 2022 17:58:34 &#43;0000"
                     class="no-wrap">
-                    Sun, 05 Dec 2021 19:55:05 &#43;0000</relative-time>
+                    Fri, 18 Feb 2022 17:58:34 &#43;0000</relative-time>
                   
                 </div>
               </div>
@@ -167,16 +165,22 @@
         <div>
           <div class="js-gist-file-update-container js-task-list-container file-box">
             <div id="file-pytest" class="file my-2">
-              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
                 <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
                   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
                     
-                    <summary id="toc-toggle" class="btn btn-octicon m-0 mr-2 p-2" aria-haspopup="menu" aria-label="Table of Contents" role="button">
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
                       <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
                         <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
                       </svg>
                     </summary>
-                          167 Words
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      167 Words
                     
 
                   </div>
@@ -187,7 +191,7 @@
               </div>
 
 
-              <div class="Box-body px-5 pb-5">
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
                 <article class="markdown-body entry-content container-lg"><!-- raw HTML omitted -->
 <h1 id="learn-about-markdown-language--">Learn About Markdown Language  🚀</h1>
 <h3 id="markdown-is-a-lightweight-markup-language-it-is-used-to-create-formatted-text-using-simple-text-editor">Markdown is a lightweight markup language. It is used to create formatted text using simple text editor.</h3>
@@ -347,69 +351,8 @@ Printf(Hello World!);</p>
     </div>
   </main>
 </div>
-<script>
- 
- 
- 
- window.onload = function () {
-   const header = document.getElementById('post-header');
-   const headerHeight = header.offsetHeight;
-   
-   document.documentElement.style.scrollPaddingTop = headerHeight + 10 + "px";
- }
-
- const tocToggleButton = document.getElementById("toc-toggle");
-
- const tippyInstance = tippy('#toc-toggle', {
-  trigger: 'click',
-  content: '<div id="table-of-contents">\u003cnav id=\u0022TableOfContents\u0022\u003e\n  \u003cul\u003e\n    \u003cli\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#markdown-is-a-lightweight-markup-language-it-is-used-to-create-formatted-text-using-simple-text-editor\u0022\u003eMarkdown is a lightweight markup language. It is used to create formatted text using simple text editor.\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n  \u003c\/ul\u003e\n\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#headers-h1-to-h6\u0022\u003eHEADERS (H1 to H6)\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output\u0022\u003eOutput\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#h2-tag\u0022\u003eh2 tag\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#h3-tag\u0022\u003eh3 tag\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#emphasis\u0022\u003eEMPHASIS\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output-1\u0022\u003eOutput\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#blockquotes\u0022\u003eBLOCKQUOTES\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output-2\u0022\u003eOutput\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#list\u0022\u003eLIST\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#ordered-list-\u0022\u003eOrdered List :\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output-3\u0022\u003eOutput\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#unordered-list-\u0022\u003eUnordered List :\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output-4\u0022\u003eOutput\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#horizontal-rule\u0022\u003eHORIZONTAL RULE\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output-5\u0022\u003eOutput\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#code\u0022\u003eCode\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output-6\u0022\u003eOutput\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#more-examples-\u0022\u003eMore Examples :\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output-7\u0022\u003eOutput\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#link\u0022\u003eLINK\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output-\u0022\u003eOutput :\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#images\u0022\u003eIMAGES\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output--1\u0022\u003eOutput :\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#emoji\u0022\u003eEMOJI\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output--2\u0022\u003eOutput :\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#footnote\u0022\u003eFOOTNOTE\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#strike-through\u0022\u003eSTRIKE THROUGH\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#output--3\u0022\u003eOutput :\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#keep-learning-\u0022\u003eKeep Learning !\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\u003c\/nav\u003e</div>',
-  allowHTML: true,
-  placement: 'bottom-start',
-  interactive: true,
-  arrow: false,
-  maxWidth: "none",
-  onHide: function () { tocToggleButton.classList.remove("hover"); },
-  onShow: function () { tocToggleButton.classList.add("hover"); },
-  onShown: function () {
-    selectTableOfContentsOption();
-
-    if (window.hasSetupTableOfContentsListeners) {
-      return;
-    }
-
-    const tableOfContents = document.getElementById("table-of-contents");
-    tableOfContents.addEventListener('click', function () {
-      
-      tippyInstance[0].hide();
-    });
-
-    window.hasSetupTableOfContentsListeners = true;
-  }
- });
-
- function selectTableOfContentsOption () {
-   const optionSelectedClass = 'table-of-contents-option-selected';
-
-   const tableOfContentsOptions = document.querySelectorAll("#table-of-contents > nav > ul li");
-
-   for (const option of tableOfContentsOptions) {
-     
-
-     const [child] = option.children;
-     if (child.tagName.toLowerCase() !== 'a') {
-       continue;
-     }
-
-     if (window.location.href === child.href) {
-       child.classList.add(optionSelectedClass);
-     } else {
-       child.classList.remove(optionSelectedClass);
-     }
-   }
- }
-
- window.onhashchange = selectTableOfContentsOption;
-</script>
+<script type="application/javascript" src='https://aryamanz29.github.io/posts/js/toc.js'></script>
+<link rel="stylesheet" href='https://aryamanz29.github.io/posts/css/toc.css' />
 
 
   <div class="footer container-xl width-full p-responsive">
