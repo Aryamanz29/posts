@@ -19,7 +19,7 @@ From last one week, Me and other fellow contributors were participating in [Open
 
 - **Double Check Double Check** : Do you remember your high school exams? You also re-check everything before submission, Same practice we are applying here while submitting PR's for maintainers & do always remember to double-check your work and try to run for different cases, That's not only saves your time but also maintainers as well.
 
-- **Be patient** : Always remember, open-source contribution is a game of checking your level of patience. Do your work and make sure you follow above mention steps, project contributing guidelines, then just leave your PR for maintainers review (You may also ping them on their IRC channel if you want).
+- **Be patient** : Always remember, open-source contribution is a game of checking your level of patience. Do your work and make sure you follow above mention steps, thoroughly read project contributing guidelines, then just leave your PR for maintainers review (You may also ping them on their IRC channel if you want).
 
 Maintainers are also wanted to check your work and suggest you changes if required, but you need to be patient for that, or You may start looking for some other issues during that time gap,  At last I would say just don't sit idle, If you really want to contribute and learn new things from the community. 😄
 
