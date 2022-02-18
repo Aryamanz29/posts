@@ -17,7 +17,7 @@ From last one week, Me and other fellow contributors were participating in [Open
 
 - **Test driven development** :  Google says, _Test-driven development is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases._ So whenever you're solving bugs don't forget to write tests for that and remember if you remove your patch from code that particular test case must fail to justify your change & the test case must be specific to your patch.
 
-- **Double Check Double Check** : Do you remember your high school exams? You also re-check everything before submission, Same practice we are applying here while submitting PR's for maintainers & do always remember to double-check your work and try to run for different cases, That's not only saves your time but also maintainers as well.
+- **Double Check Double Check** : Do you remember your high school exams? You also re-check everything before submission, Same practice we are applying here while submitting PR's for maintainers & do always remember to double-check your work and try to checks for different cases, That's not only saves your time but also maintainers as well.
 
 - **Be patient** : Always remember, open-source contribution is a game of checking your level of patience. Do your work and make sure you follow above mention steps, thoroughly read project contributing guidelines, then just leave your PR for maintainers review (You may also ping them on their IRC channel if you want).
 
