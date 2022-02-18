@@ -42,5 +42,5 @@ My links of PR's that got reviewed and merged during sprint mention below 👇
   - https://github.com/openwisp/openwisp-users/pull/306
   - https://github.com/openwisp/openwisp-controller/pull/596
 
-And last keep learning, Stay healthy 😄 
+Keep learning, Stay healthy 🙃 
 
