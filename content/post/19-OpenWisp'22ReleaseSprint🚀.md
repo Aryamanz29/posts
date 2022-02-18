@@ -9,7 +9,7 @@ summary: OpenWisp'22 Release Sprint <!--Blog post visible summary here-->
 
 ![o-sprint](https://user-images.githubusercontent.com/56113566/154739652-d72ca1ef-c67f-4822-be90-666fcb5681cc.jpeg)
 
-From last one week, Me and other fellow contributors were participating in [OpenWisp'22](https://openwisp.org/) release sprint, Today It finally came to an end. This was a very new experience for me because I got the opportunity to learn about how actually maintainers of big open-source project reviews contributors PR's and what they're actually wanted from contributors to do before they request review from maintainers. I'll mention some valuable points which I've noted during this sprint, and they are very useful for new contributors.
+From last one week, Me and other fellow contributors were participating in [OpenWisp'22](https://openwisp.org/) release sprint, Today It finally came to an end. It was a very new experience for me because I got the opportunity to learn about how actually maintainers of big open-source project reviews contributors PR's and what they're actually wanted from contributors to do before they request review from maintainers. I'll mention some valuable points which I've noted during this sprint, and they are very useful for new contributors.
 
 - **Read documentation** : Before diving into an issue section, I would always suggest everyone to read documentation first, In [OpenWisp](https://openwisp.org/) you found every project is well documented. Not only you're going to understand how the project is working (technical aspect), but you'll also get an idea about motivation of the project i.e. why it started, what real world problem it tries to solve, What it's going to achieve in future etc.
 
